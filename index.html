@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: rgb(75, 75, 159);
+        color: white;
+        font-family: poppins, sans-serif;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(107, 115, 173);
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        color: rgb(102, 86, 116);
+        font-size: 1.04rem;
+      }
+      .left {
+        font-size: 1.5rem;
+      }
+      .firstSection{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 130px 0;
+      }
+
+      .firstSection > div{
+        width: 30%;
+      }
+      .leftSection{
+        font-size: 2rem;
+      }
+
+      .leftSection .btn{
+        padding: 5px;
+        font-size: 15px;
+        border: 2.5px solid wheat;
+        border-radius: 8px;
+        transition: background-color 0.3s ease;
+        
+      }
+      .leftSection .btn:hover{
+        background-color: rgb(238, 181, 75);
+        color: rgb(60, 160, 214);
+      }
+      .leftSection .btn:active{
+        transform: scale(0.95);
+        transition: transform 0.1s ease;
+      }
+      .rightSection img{
+         width: 100%;
+      }
+      .purple{
+        color: violet;
+      }
+      .text-gray{
+        color: gray;
+      }
+      #element{
+        color: violet;
+      }
+      
+      main hr{
+        border: 0;
+        background: rgb(120, 161, 160);
+        height: 1.2px;
+        margin: 40px 84px;
+      }
+      .secondSection{
+        margin-left: 100px;
+        height: 80vh;
+      }
+      .secondSection h1{
+        font-size: 2.2rem;
+      }
+      .secondSection .text-gray{
+        font-size: 1.5rem;
+      }
+      .secondSection .box{
+        background: white;
+        width: 80vw;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;
+      }
+      .secondSection .vertical{
+        height: 93px;
+        width: 1px;
+        background-color: white;
+        margin: auto;
+      }
+      .image-top{
+        width:23px;
+        position: relative;
+        top: -32px;
+        left: -9px;
+      }
+      .vertical-title{
+               position: relative;
+               top: 75px;
+               width: 150px;
+               font-size: 14px;
+      }
+      .vertical-desc{
+              position: relative;
+              top: 85px;
+              color: gray;
+              width: 150px;
+              font-size: 12px;
+      }
+
+      footer{
+        background-color: rgb(71, 59, 109);
+        height: 275px;
+        width: 100%;
+      }
+      .footer{
+        align-items: baseline;
+    display: flex;
+    padding: 23px 100px;
+    flex-direction: column;
+      }
+      .footer-second{
+        margin-top: 2% ;
+    font-family: inherit;
+    margin-left: 10px;
+      }
+      .footer-second ul li{
+        list-style: none;
+      }
+      .footer-second ul li a{
+        text-decoration: none;
+        color: white;
+      }
+     
+      
+      .fourthSection{
+        display: flex;
+    margin-left: 100px;
+    margin-top: 26px;
+    height: 350px;
+    justify-content: space-between;
+}
+.images{
+  display: flex;
+    flex-direction: column;
+   width: 52px;
+   grid-row: 2;
+}
+.sm{
+  height: 26px;
+  margin: 10px;
+}
+
+.nms{
+  height: 26px;
+  margin: 19px;
+  margin-left: 3px;
+  margin-top: 10px;
+  
+}
+.sm-names{
+  grid-row: 2;
+}
+.contact{
+  grid-column: span 2;
+}
+
+
+section div div p a{
+  text-decoration: none;
+  color: #bde3c4;
+  transition: color 0.2s;
+}
+
+section div div p a:hover{
+  color: rgb(30, 141, 210);
+}
+
+.left-section4{
+  display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1fr 7fr;
+    width: 40%;
+    height: 92%;
+}
+.gmail{
+  font-size: medium;
+    font-family: fangsong;
+    color: darkgray;
+}
+.right-section4{
+  display: grid;
+    grid-template-rows: 1fr 5fr;
+    width: 50%;
+}
+.thirdSection{
+  margin:100px;
+  display: grid;
+    height: 90vh;
+    grid-template-rows: 1.3fr 6fr 10fr;
+    margin-top: -10px;
+}
+.leftSection{
+  padding: 73px;
+    margin-left: -52px;
+    margin-top: -68px;
+}
+
+.fifthSection{
+  height: 65vh;
+ 
+}
+
+
+      
+      
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav >
+        <div class="left">Krishanveer's Portfolio</div>
+        <div class="right">
+          <ul>
+           <li> <a href="#Home">Home</a></li>
+           <li> <a href="#About">About</a></li>
+           <li> <a href="#Services">Services</a></li>
+           <li> <a href="#Projects">Projects</a></li>
+           <li> <a href="#Contact Me">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+    
+
+      <section id="Home" class="firstSection">
+        <div class="leftSection">
+          
+            Hi, My name is <span class="purple">Krishanveer </span>
+
+            <div>And I am a Passionate</div>
+            <span id="element"></span>
+            <div class="buttons">
+              <button class="btn" ><a href="#" style="text-decoration: none;">Download Resume</a></button>
+              <button class="btn"><a href="https://github.com/Kveer3303" style="text-decoration: none;">Visit Github</a></button>
+            </div>
+        </div>
+        <div class="rightSection">
+            <img src="./—Pngtree—3d illustration of character website_13029763.png">
+        </div>
+      </section>
+     
+      <hr/>
+
+      <section id="Projects" class="secondSection">
+        <span class="text-gray">What I have done so far?</span>
+        <h1>Projects</h1>
+        <div class="box">
+          <div class="vertical">
+            <img src="./curodoc_logo.jpg" class="image-top" style="width: 4vh ;">
+            <div class="vertical-title">
+              Curodoc_Clone(August 2023)
+            </div>
+            <div class="vertical-desc">
+             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptates eaque culpa distinctio
+              necessitatibus commodi voluptas cupiditate possimus deserunt ab nesciunt nemo, eligendi dolorem aliquid 
+              doloribus quaerat neque! Esse, iste!
+            </div>
+          </div>
+          <div class="vertical">
+            <img src="./drum2.png" class="image-top" style="width: 4vh;height: 4vh;">
+            <div class="vertical-title">
+             Virtual Drum (July 2023)
+            </div>
+            <div class="vertical-desc">
+             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptates eaque culpa distinctio
+              necessitatibus commodi voluptas cupiditate possimus deserunt ab nesciunt nemo, eligendi dolorem aliquid 
+              doloribus quaerat neque! Esse, iste!
+            </div>
+          </div>
+          <div class="vertical">
+            <img src="./web design logo.png" class="image-top" style="width: 4vh;height: 4vh;">
+            <div class="vertical-title">
+              Website Making Company
+            </div>
+            <div class="vertical-desc">
+             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptates eaque culpa distinctio
+              necessitatibus commodi voluptas cupiditate possimus deserunt ab nesciunt nemo, eligendi dolorem aliquid 
+              doloribus quaerat neque! Esse, iste!
+            </div>
+          </div>
+          
+      </section>
+
+      <hr/>
+
+      <section id="About Me" class="thirdSection">
+       <div>
+        <h1 style="height: 7vh; font-size: 2.2rem;">About Me </h1>
+        </div> 
+        <div class="mypic" style="height: 30vh; margin-bottom: 9px;">
+          <img src="./veer1-fotor-20231013125548.png" alt="" class="myimg" style="height: 30vh; ">
+       
+          </div>
+        <div class="desc">
+          <p>
+            Greetings, I'm Krishanveer Singh, hailing from the culturally rich city of Agra in Uttar Pradesh, and I currently call Delhi my home.
+             I'm a dedicated IT enthusiast with a burning desire to leverage technology for the betterment of society.
+             <br>
+            <p> </p>
+            <br>
+           I'm not just a student but also a proactive developer with hands-on experience in web development, PHP, and C++. 
+           Over the years, I've been part of various projects that have allowed me to apply my skills to real-world challenges.
+            For instance, Curodoc(Website for online health care system).
+           My journey has been enriched by my selection from the 11 SSB Allahabad for the Indian Army.
+            This experience taught me the values of discipline, teamwork, and perseverance, which I carry with me as 
+            I strive to make a positive impact in the tech world.
+           <br>
+           <br>
+           My primary goal is to harness the power of technology to elevate society as a whole. I envision 
+           creating innovative solutions that address crucial issues and enhance people's lives. 
+           By mastering SQL and other essential tools, I'm equipping myself to turn this vision into reality.
+           <br>
+           Of course, no journey is without its challenges. As I've faced obstacles, I've learned 
+           to embrace them as opportunities for growth. [Share an example of a challenge
+            you've overcome and how it has shaped you].
+            <br>
+           I'm excited about what the future holds and the impact I can make in the dynamic world of technology.
+            With each step, I'm determined to bring us closer to a brighter, tech-driven future that benefits us 
+            all.
+
+ </p></div>
+        </section>
+      
+      <hr/>
+
+      <section id="Contact Me" class = "fourthSection">
+        <div class="left-section4">
+        <div class="contact">
+          <span class="text-gray" style="font-size: 21px;">How you can Contact me</span>
+          <h1 style="font-size: 35px;">Contact Me</h1>
+        </div>
+        <div class="images">
+          <img src="./ig png.png" alt="" class="ig sm">
+          <img src="./fb png.png" alt="" class="fb sm">
+          <img src="./twitter.png" alt="" class="twit sm">
+          <img src="./linkedIn.png" alt="" class="linkedIn sm">
+        </div>
+        
+        <div class="sm-names">
+          <p class="nms"><a href="https://www.instagram.com/k_veer3303/" id="nig" >Instagram</a></p>
+          <p class="nms"><a href="https://www.facebook.com/krishanveer.chahar.98/" id="nfb" >Facebook</a></p>
+          <p class="nms"><a href="https://x.com.KVeer64931797?t=rypglnxsUZGu22hqSOErw&s=O9" id="ntw" >Twitter</a></p>
+          <p class="nms"><a href="#" id="nli" >Linked In</a></p>
+        </div>
+      </div>
+        
+
+     
+        
+        <div class="right-section4">
+          <div style="margin-top: 118px;">
+         <div class="gmail">Or Write to me at : </div>
+         <p style="color: floralwhite; font-size: 15px;"><a href="Official.kveer.3303@gmail.com">Official.kveer.3303@gmail.com</a></p>
+        </div>
+        <div style="margin-top: 10px;">
+          <div class="addr">Address : </div>
+          <address>
+          903/3, APJ Hostel<br>
+          Delhi Technological University <br>
+          Bawana Road, Shahbad Daulatpur village, Delhi. <br>
+          PIN : 110042.
+          </address>
+          </div>
+        </div>
+        
+      </section>
+
+      <hr/>
+
+      <section id="Services" class="fifthSection">
+        <div class="fifth-section-header" style=" margin-left: 100px;">
+        <div class="text-gray" style="font-size: 22px;">What I offer!
+        </div>
+        <div class="serv-heading">Services 
+        </div>
+      </div>
+      <div class="cards">
+        <div class="service-card">
+          <div class="service-icon">
+              <img src="./web dev icon.png" alt="Web Development Icon">
+          </div>
+          <h3 class="service-title">Web Development</h3>
+          <p class="service-description">Crafting responsive and user-friendly websites and web applications that captivate your audience.</p>
+          <a href="#" class="learn-more-button">Learn More</a>
+       </div>
+
+       <div class="service-card">
+        <div class="service-icon">
+            <img src="./c++ dev icon.png" alt="cpp Icon">
+        </div>
+        <h3 class="service-title">C++ Developer</h3>
+        <p class="service-description">Crafting responsive and user-friendly websites and web applications that captivate your audience.</p>
+        <a href="#" class="learn-more-button">Learn More</a>
+     </div>
+
+     <div class="service-card">
+      <div class="service-icon">
+          <img src="./php-icon.png" alt="PHP developer">
+      </div>
+      <h3 class="service-title">PHP Developer</h3>
+      <p class="service-description">Crafting responsive and user-friendly websites and web applications that captivate your audience.</p>
+      <a href="#" class="learn-more-button">Learn More</a>
+   </div>
+
+  </div>
+
+       
+      
+
+      </section>
+    </main>
+
+    
+
+
+   
+    <footer>
+      <div class="footer">
+        <div class="footer-first">
+          <h3>Krishanveer's Portfolio</h3>
+        </div>
+        <div class="All-Footer"></div>
+        <div class="footer-second">
+          <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About Me">About Me</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#Contact Me">Contact Me</a></li>
+            <li><a href="#Services">Services</a></li>
+          </ul>
+        </div>
+       
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+     
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Software Engineer', 'Web designer', 'Web developer'],
+      typeSpeed: 50,
+    });
+  </script>
+</body>
+  </body>
+</html>
+
+
+
+<!--
+  
+-->
+
